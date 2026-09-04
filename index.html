@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Trailers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Movie Trailers</h1>
+    </header>
+
+    <div class="container">
+        <div class="movie">
+            <img src="https://via.placeholder.com/300x400?text=Movie+1" alt="Movie 1">
+            <h3>Action Movie</h3>
+            <button onclick="playTrailer('action')">Watch Trailer</button>
+        </div>
+
+        <div class="movie">
+            <img src="https://via.placeholder.com/300x400?text=Movie+2" alt="Movie 2">
+            <h3>Comedy Film</h3>
+            <button onclick="playTrailer('comedy')">Watch Trailer</button>
+        </div>
+
+        <div class="movie">
+            <img src="https://via.placeholder.com/300x400?text=Movie+3" alt="Movie 3">
+            <h3>Drama Series</h3>
+            <button onclick="playTrailer('drama')">Watch Trailer</button>
+        </div>
+
+        <div class="movie">
+            <img src="https://via.placeholder.com/300x400?text=Movie+4" alt="Movie 4">
+            <h3>Sci-Fi Adventure</h3>
+            <button onclick="playTrailer('scifi')">Watch Trailer</button>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTrailer()">&times;</span>
+            <iframe id="trailer-video" width="100%" height="500" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
